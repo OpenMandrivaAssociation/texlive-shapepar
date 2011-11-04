@@ -62,6 +62,7 @@ output to \shapepar polygon form.
 %doc %{_texmfdistdir}/doc/generic/shapepar/shapepar.ltx
 %doc %{_texmfdistdir}/doc/generic/shapepar/shapepar.pdf
 %doc %{_texmfdistdir}/doc/generic/shapepar/triangleshapes.def
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -72,3 +73,5 @@ output to \shapepar polygon form.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
