@@ -1,12 +1,12 @@
-# revision 15878
+# revision 30708
 # category Package
 # catalog-ctan /macros/latex/contrib/shapepar
-# catalog-date 2009-10-10 00:35:28 +0200
+# catalog-date 2013-05-27 20:07:27 +0200
 # catalog-license other-free
-# catalog-version 2.1
+# catalog-version 2.2
 Name:		texlive-shapepar
-Version:	2.1
-Release:	2
+Version:	2.2
+Release:	1
 Summary:	A macro to typeset paragraphs in specific shapes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/shapepar
@@ -43,16 +43,16 @@ output to \shapepar polygon form.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/generic/shapepar/Canflagshape.def
+%{_texmfdistdir}/tex/generic/shapepar/TeXshape.def
+%{_texmfdistdir}/tex/generic/shapepar/candleshape.def
+%{_texmfdistdir}/tex/generic/shapepar/dropshape.def
 %{_texmfdistdir}/tex/generic/shapepar/shapepar.sty
-%doc %{_texmfdistdir}/doc/generic/shapepar/Canflagshape.def
+%{_texmfdistdir}/tex/generic/shapepar/triangleshapes.def
 %doc %{_texmfdistdir}/doc/generic/shapepar/README.shapepar
-%doc %{_texmfdistdir}/doc/generic/shapepar/TeXshape.def
-%doc %{_texmfdistdir}/doc/generic/shapepar/candleshape.def
-%doc %{_texmfdistdir}/doc/generic/shapepar/dropshape.def
 %doc %{_texmfdistdir}/doc/generic/shapepar/proshap.py
 %doc %{_texmfdistdir}/doc/generic/shapepar/shapepar.ltx
 %doc %{_texmfdistdir}/doc/generic/shapepar/shapepar.pdf
-%doc %{_texmfdistdir}/doc/generic/shapepar/triangleshapes.def
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,17 +63,3 @@ output to \shapepar polygon form.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-2
-+ Revision: 755979
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
-+ Revision: 719523
-- texlive-shapepar
-- texlive-shapepar
-- texlive-shapepar
-- texlive-shapepar
-
