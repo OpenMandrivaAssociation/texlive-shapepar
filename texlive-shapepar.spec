@@ -6,7 +6,7 @@
 # catalog-version 2.2
 Name:		texlive-shapepar
 Version:	2.2
-Release:	10
+Release:	11
 Summary:	A macro to typeset paragraphs in specific shapes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/shapepar
