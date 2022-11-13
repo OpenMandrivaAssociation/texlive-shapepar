@@ -1,18 +1,12 @@
-# revision 30708
-# category Package
-# catalog-ctan /macros/latex/contrib/shapepar
-# catalog-date 2013-05-27 20:07:27 +0200
-# catalog-license other-free
-# catalog-version 2.2
 Name:		texlive-shapepar
-Version:	2.2
-Release:	12
+Version:	30708
+Release:	1
 Summary:	A macro to typeset paragraphs in specific shapes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/shapepar
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/shapepar.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/shapepar.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/shapepar.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/shapepar.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -34,12 +28,12 @@ the shapepatch extension to transfig which will convert xfig
 output to \shapepar polygon form.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -56,7 +50,7 @@ output to \shapepar polygon form.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
