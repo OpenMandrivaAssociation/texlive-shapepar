@@ -1,6 +1,6 @@
 Name:		texlive-shapepar
 Version:	30708
-Release:	1
+Release:	2
 Summary:	A macro to typeset paragraphs in specific shapes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/shapepar
