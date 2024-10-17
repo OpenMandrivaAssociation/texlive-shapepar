@@ -3,7 +3,7 @@ Version:	69343
 Release:	1
 Summary:	A macro to typeset paragraphs in specific shapes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/shapepar
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/shapepar
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/shapepar.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/shapepar.doc.r%{version}.tar.xz
